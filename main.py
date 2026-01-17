@@ -23,7 +23,7 @@ print(f"开始下载模型文件...")
 os.makedirs("./models", exist_ok=True)
 for model_source in model_sources:
     snapshot_download(
-        local_dir="./models",
+        local_dir="/root/autodl-tmp/models/",
         **model_source
     )
 
